@@ -49,3 +49,14 @@
 ;; 3. Definir ´<stich>´
 (define stitch
   (lambda (E1 E2) (beside E1 E2)))
+
+;; Ejemplo.
+;; Cuadro ´<b>´ orientado hacia la izquierda superior sobre cuadro ´<a>´ orientado
+;; a la derecha inferior de forma vertical.
+(printf "Ejemplo 1.\n")
+
+(r-right
+ (stitch
+  (r-right
+   (r-right b))
+  a))
