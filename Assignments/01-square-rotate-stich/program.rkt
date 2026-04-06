@@ -74,3 +74,10 @@
 (define (stack E1 E2)
   (r-right
    (stitch (r-left E2) (r-left E1))))
+
+;; Ejemplo 2. Replicar el Ejemplo 1.
+
+(printf "Ejemplo 2.\n")
+(stack
+ (r-right a)
+ (r-left b))
