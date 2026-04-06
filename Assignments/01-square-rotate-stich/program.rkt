@@ -60,3 +60,17 @@
   (r-right
    (r-right b))
   a))
+
+
+;; Ampliamiento de las funcionalidades
+
+;; Rotacion a la izquierda (esta vez definida sin lambda)
+(define (r-left E)
+  (r-right
+   (r-right
+    (r-right E))))
+
+;; Apilar
+(define (stack E1 E2)
+  (r-right
+   (stitch (r-left E2) (r-left E1))))
